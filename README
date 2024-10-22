@@ -1,0 +1,57 @@
+README
+
+Description
+This project is a social media client application developed as part of a workflow course assignment. 
+It demonstrates the implementation of various development workflows and comprehensive testing strategies to enhance the quality of the software package. 
+The project includes configuration of ESLint, Prettier, Jest, and Cypress for effective code quality and testing.
+
+Installation Instructions
+1. Clone repo - git clone https://github.com/PatrickRoethe/social-media-client.git
+2. Navigate to the Project Directory - cd social-media-client
+3. install dependencies - npm install
+
+Usage
+Running tests
+
+-Jest unit tests:
+ npm test
+-Cypress end to end tests: 
+npm run cypress
+
+Linting and formatting:
+To lint and format the code, you can use the following command:
+npm run lint
+
+Tools and Configuration
+ESLint: A tool for identifying and fixing problems in JavaScript code.
+Prettier: A code formatter that ensures consistent code style across the project.
+Babel: A JavaScript compiler that allows the use of the latest JavaScript features by transpiling them to a version compatible with older browsers.
+Jest: A testing framework for JavaScript, primarily used for unit testing.
+Cypress: An end-to-end testing framework for web applications.
+ESLint and Prettier Configuration
+The configuration files for ESLint and Prettier are set up to ensure that the code adheres to specific style guidelines and best practices.
+
+Babel Configuration
+Babel is configured to transpile modern JavaScript syntax into a backward-compatible version, allowing the application to run in older environments.
+
+Troubleshooting
+Common Issues
+Linting Errors: If you encounter linting errors, ensure that your code follows the ESLint rules specified in the configuration. You can run npm run lint to check for issues.
+Test Failures: If a test fails, review the test output for information on what went wrong. Tests may fail if the application does not behave as expected.
+Conclusion
+This project showcases the implementation of quality assurance practices in software development. The tests and tools used ensure that the application maintains high standards of code quality and functionality.
+
+Workarounds and Potential Bugs
+
+ESLint Rules:
+
+In the project, the decision was made to ignore "unused variables" in index.js and cypress.config.js. 
+This was a deliberate choice to accommodate the specific needs of the project and avoid unnecessary linting errors. 
+It reflects a need to adjust ESLint rules to fit the project's actual requirements. 
+If this situation affects others in the team, it may be worth discussing with the project owner for potential adjustments to the linting rules.
+
+Cypress and Missing HTML Elements:
+
+An issue was encountered where an alert element triggered by JavaScript was not captured by Cypress because it was not an HTML element. 
+This can be considered a minor bug, as it is generally expected that error messages should be displayed as HTML elements for better testability and user experience. 
+Reporting this issue to the project owner could help improve the testability and usability of the application in production.
