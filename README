@@ -8,7 +8,7 @@ The project includes configuration of ESLint, Prettier, Jest, and Cypress for ef
 Installation Instructions
 1. Clone repo - git clone https://github.com/PatrickRoethe/social-media-client.git
 2. Navigate to the Project Directory - cd social-media-client
-3. install dependencies - npm install
+3. Install dependencies - npm install
 
 Usage
 Running tests
