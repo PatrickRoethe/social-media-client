@@ -32,8 +32,8 @@ ESLint and Prettier Configuration
 The configuration files for ESLint and Prettier are set up to ensure that the code adheres to specific style guidelines and best practices.
 
 Babel Configuration
-Babel is configured to transpile modern JavaScript syntax into a backward-compatible version, allowing the application to run in older environments.
-Babel makes moderne ES6 syntax readable for Jest & Cypress.
+Babel is configured to transpile modern JavaScript (ES6+) syntax into a version compatible with older environments. 
+This ensures that Jest and Cypress can correctly interpret and execute the code during testing without encountering issues related to newer syntax.
 
 Troubleshooting
 Common Issues
