@@ -42,16 +42,18 @@ Conclusion
 This project showcases the implementation of quality assurance practices in software development. The tests and tools used ensure that the application maintains high standards of code quality and functionality.
 
 Workarounds and Potential Bugs
-
 ESLint Rules:
-
 In the project, the decision was made to ignore "unused variables" in index.js and cypress.config.js. 
 This was a deliberate choice to accommodate the specific needs of the project and avoid unnecessary linting errors. 
-It reflects a need to adjust ESLint rules to fit the project's actual requirements. 
-If this situation affects others in the team, it may be worth discussing with the project owner for potential adjustments to the linting rules.
+The cypress.config.js file contains configuration settings that require certain variables, which may not be actively used in the code but are essential for setup. 
+Ignoring these linting issues allows the development process to focus on more critical problems without compromising the functionality of the Cypress tests.
+
+As for index.js, it is a file that falls outside the scope of this assignment, and thus, any issues arising from it should not detract from the overall project goals. 
+It is advisable to discuss with the project owner the potential need for adjustments to the ESLint rules to fit the project's actual requirements. 
+This ensures that all team members can work effectively without being hindered by linting errors that do not impact the functionality of the application.
 
 Cypress and Missing HTML Elements:
+An issue was encountered where an alert element triggered by JavaScript was not captured by Cypress because it was not represented as an HTML element. 
+This can be considered a minor bug, as it is generally expected that error messages should be displayed as HTML elements for better testability and user experience.
+ Reporting this issue to the project owner could help improve the testability and usability of the application in production, ensuring that the application behaves as expected from a user perspective.
 
-An issue was encountered where an alert element triggered by JavaScript was not captured by Cypress because it was not an HTML element. 
-This can be considered a minor bug, as it is generally expected that error messages should be displayed as HTML elements for better testability and user experience. 
-Reporting this issue to the project owner could help improve the testability and usability of the application in production.
